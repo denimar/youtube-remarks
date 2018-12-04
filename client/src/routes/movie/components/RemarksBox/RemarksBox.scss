@@ -1,0 +1,90 @@
+.remarksbox-container {
+  border: solid 2px #76aad5;
+  border-radius: 3px;
+  background-color: white;  
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-left: 7px;
+
+  .remarksbox-header {
+    background-color: #76aad5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: hsl(0, 0%, 95%);
+    height: 30px;
+
+    .remarksbox-header-title {
+      font-size: 15px;
+      font-style: italic;
+      flex: 1;
+      padding: 2px;      
+    }
+
+    svg {
+      margin-right: 10px;
+      color: #b1cfe7;
+      cursor: pointer;
+      
+      &:hover {
+        color: white;
+      }
+    }
+
+  }
+
+  .remarksbox-body {
+    flex: 1;
+    //border: solid 1px #76aad5;        
+    overflow-y: auto;
+    border-top-width: 0px;    
+    padding: 7px;
+
+    .remarksbox-item {
+      border: solid 1px hsl(0, 0%, 88%);
+      border-radius: 5px;
+      background-color: hsl(0, 0%, 96%);
+      margin-bottom: 7px;    
+      padding: 4px;  
+
+      .remarksbox-item-header {
+        display: flex;
+        flex-direction: row;
+
+        .remarksbox-item-times {
+          color: #8c8c8c;
+          flex: 1;
+          user-select: none;
+          
+          span {
+            margin-left: 5px;
+            margin-right: 5px;            
+            font-size: 10px;            
+          }
+
+          &:hover {
+            color: #3385ff;
+            cursor: pointer;
+            font-weight: bold;
+          }
+        }
+
+        .tool-button {
+          color: gray;
+          margin-left: 8px;
+
+          &:hover {
+            color: #3c86c3;
+            cursor: pointer;            
+          }
+        }
+
+      }
+      .remarksbox-item-body {
+        font-size: 14px;
+        padding: 8px 5px;
+      }
+    }
+  }
+}

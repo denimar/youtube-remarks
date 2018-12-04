@@ -1,0 +1,8 @@
+export const FETCH_MOVIES = 'FETCH_MOVIES'
+export const FETCH_MOVIES_ASYNC = 'FETCH_MOVIES_ASYNC'
+export const GET_MOVIE = 'GET_MOVIE'
+export const GET_MOVIE_ASYNC = 'GET_MOVIE_ASYNC'
+export const ADD_MOVIE = 'ADD_MOVIE'
+export const ADD_MOVIE_ASYNC = 'ADD_MOVIE_ASYNC'
+export const DELETE_MOVIE = 'DELETE_MOVIE'
+export const DELETE_MOVIE_ASYNC = 'DELETE_MOVIE_ASYNC'

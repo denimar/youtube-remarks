@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: auto;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-family: Roboto;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+}
+
+a {
+  color: #2789B9;
+}
