@@ -5,6 +5,7 @@ import MainMenu from './components/MainMenu'
 import TranscriptBox from './components/TranscriptBox'
 import RemarksBox from './components/RemarksBox'
 import AppContext from '../../layouts/App/AppContext'
+import moviesBackgroundPng from './movies-background.png'
 
 
 class MovieComponent extends React.Component {
@@ -48,7 +49,7 @@ class MovieComponent extends React.Component {
                     <TranscriptBox ref={elem => this.transcriptBox = elem} movie={this.state.currentMovie} playerElm={this.player} />
                     <RemarksBox movieId={this.state.movieId} remarks={this.state.remarks} playerElm={this.player} />
                   </React.Fragment>
-                ) : null
+                ) : (<div className="movie-background"><img src={moviesBackgroundPng} /></div>)
               }
             </div>
           )

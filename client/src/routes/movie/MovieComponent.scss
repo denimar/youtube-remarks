@@ -2,6 +2,7 @@
   display: flex;
   flex: 1;
   flex-direction: row;
+  align-items: center;
 
   .video-js {
     flex: 1;
@@ -26,6 +27,19 @@
         width: 100%;
       }
     }
+  }
+
+  .movie-background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    opacity: .2;
+
+    img {
+      width: 50%;
+      height: 50%;
+    }  
   }
  
 }
