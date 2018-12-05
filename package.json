@@ -33,9 +33,7 @@
     "client-build": "cd client && npm run build",
     "server-build": "babel -d build/server server -s",
     "build": "run-p server-build client-build",
-    "serve-server": "NODE_ENV=production node build/server",
-    "serve-client": "serve -s client/build",
-    "start": "run-p serve-client serve-server",
+    "start": "NODE_ENV=production node build/server",
     "dev": "run-p server client"
   }
 }

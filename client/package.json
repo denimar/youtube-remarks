@@ -2,7 +2,6 @@
   "name": "react-redux-simple",
   "description": "A minimal example of React Redux - Only used to understand how React and Redux work together.",
   "version": "0.0.1",
-  "private": true,
   "devDependencies": {
     "husky": "^1.2.0",
     "node-sass": "^4.11.0",
@@ -26,9 +25,9 @@
     "redux-saga": "^0.16.2"
   },
   "scripts": {
-    "build": "react-scripts build"
+    "start": "react-scripts start",
+    "build": "react-scripts build && cp -r ./build/* ../build/client"
   },
-  "proxy": "http://localhost:5002/",
   "browserslist": [
     ">0.2%",
     "not dead",
