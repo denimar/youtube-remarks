@@ -16,6 +16,7 @@
     border: solid 2px #76aad5;
     border-radius: 3px;
     padding: 6px;
+    height: 100%;
 
     .media-player {
       flex: 1;
@@ -29,6 +30,14 @@
     }
   }
 
+  .transcriptbox-container {
+    height: 100%;
+  }
+
+  .remarksbox-container {
+    height: 100%;
+  }  
+  
   .movie-background {
     display: flex;
     flex-direction: column;
