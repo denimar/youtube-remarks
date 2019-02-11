@@ -27,7 +27,7 @@ const server = app.listen(port, () => {
   console.log(`Listening on port ${port}`)
   
   const clientDb = new elasticsearch.Client({
-    host: 'http://104.196.193.93:9200', //Kibana at: http://104.196.193.93:5601 //reference: https://www.elastic.co/assets/blt395810ab50bd150b/6.3_es_commands.txt
+    host: 'http://35.190.150.136:9200', //Kibana at: http://35.190.150.136:5601 //reference: https://www.elastic.co/assets/blt395810ab50bd150b/6.3_es_commands.txt
     //log: 'trace'
   })
   clientDb.ping({
